@@ -30,11 +30,11 @@
     <form action="/mainServlet" method="get" class="col-xs-6">
         <div class="form-group">
         <h2>Registration</h2>
-            <input type="text" name="fullName" class="form-control" id="name" placeholder="Full name"><br>
-            <input type="text" name="fridgeID" class="form-control"  placeholder="Fridge ID"><br>
-            <input type="text" name="login" class="form-control" id="login" placeholder="Login"><br>
-            <input type="email" name="email" class="form-control" placeholder="Email"><br>
-            <input type="password" name="password" class="form-control" placeholder="Password"><br>
+            <input type="text" name="fullName" minlength="4" class="form-control" id="name" placeholder="Full name"><br>
+            <input type="text" name="fridgeID" minlength="4" class="form-control"  placeholder="Fridge ID"><br>
+            <input type="text" name="login" minlength="4" class="form-control" id="login" placeholder="Login"><br>
+            <input type="email" name="email" minlength="4" class="form-control" placeholder="Email"><br>
+            <input type="password" name="password" minlength="4" class="form-control" placeholder="Password"><br>
             <input type="submit" value="sign up">
         </div>
     </form>

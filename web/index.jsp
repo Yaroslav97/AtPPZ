@@ -34,14 +34,14 @@
     <form action="/mainServlet" method="get" class="col-xs-6">
         <div class="form-group">
             <h2>SmartFridge</h2>
-            <input type="text" name="login" class="form-control" id="login" placeholder="Enter login">
+            <input type="text" name="login" minlength="4" class="form-control" id="login" placeholder="Enter login">
         </div>
         <br>
         <div class="form-group">
-            <input type="password" name="password" class="form-control" placeholder="Enter password">
+            <input type="password" name="password" minlength="4" class="form-control" placeholder="Enter password">
         </div>
         <br>
-        <input type="submit" name="login" value="sign in">
+        <input type="submit" name="login"  value="sign in">
         <br>
         <br>
         <hr>

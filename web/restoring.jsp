@@ -27,9 +27,9 @@
     <form action="/restore" method="get" class="col-xs-6">
         <div class="form-group">
             <h3>Restoring access</h3>
-            <input type="text" name="rLogin" class="form-control" id="login" placeholder="Login">
+            <input type="text" name="rLogin" minlength="4" class="form-control" id="login" placeholder="Login">
             <br>
-            <input type="email" name="rEmail" class="form-control" placeholder="Email">
+            <input type="email" name="rEmail" minlength="4" class="form-control" placeholder="Email">
         </div>
         <input type="submit" value="send" class="btn btn-info btn-lg">
     </form>

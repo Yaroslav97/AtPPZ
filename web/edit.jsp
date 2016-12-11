@@ -25,9 +25,9 @@
 <div class="container">
     <form action="/editProfile" method="get" class="col-xs-8">
         <h3>Edit profile: ${login}</h3>
-        <input type="text" name="eFullName" value=${fullName} class="form-control" placeholder="Full Name"><br>
-        <input type="email" name="eEmail" value=${email} class="form-control" placeholder="Email"><br>
-        <input type="password" name="ePassword" class="form-control" placeholder="Password"><br>
+        <input type="text" name="eFullName" value=${fullName} minlength="4" class="form-control" placeholder="Full Name"><br>
+        <input type="email" name="eEmail" value=${email} minlength="4" class="form-control" placeholder="Email"><br>
+        <input type="password" name="ePassword" minlength="4" class="form-control" placeholder="Password"><br>
         <input type="submit" value="edit">
     </form>
 
