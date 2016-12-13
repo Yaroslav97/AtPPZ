@@ -17,6 +17,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="cabinet.jsp">Cabinet</a></li>
+            <li><a href="#">${fullName}</a></li>
             <li class="active"><a href="/logout">Logout</a></li>
         </ul>
     </div>
@@ -25,8 +26,8 @@
 <div class="container">
     <form action="/editProfile" method="get" class="col-xs-8">
         <h3>Edit profile: ${login}</h3>
-        <input type="text" name="eFullName" value=${fullName} minlength="4" class="form-control" placeholder="Full Name"><br>
-        <input type="email" name="eEmail" value=${email} minlength="4" class="form-control" placeholder="Email"><br>
+        <input type="text" name="eFullName" value="${fullName}" minlength="4" class="form-control" placeholder="Full Name"><br>
+        <input type="email" name="eEmail" value="${email}" minlength="4" class="form-control" placeholder="Email"><br>
         <input type="password" name="ePassword" minlength="4" class="form-control" placeholder="Password"><br>
         <input type="submit" value="edit">
     </form>
